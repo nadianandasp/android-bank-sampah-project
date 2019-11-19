@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity"
+    android:padding="@dimen/item_margin_16"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/ll_logo_sahitya"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Bank Sampah Sahitya"
+            android:fontFamily="@font/nova_square"
+            android:textColor="@color/green_logo"
+            android:textSize="36sp"/>
+
+        <ImageView
+            android:layout_width="138dp"
+            android:layout_height="138dp"
+            android:src="@mipmap/ic_launcher"/>
+
+    </LinearLayout>
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_login"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="170dp"-->
+<!--        android:layout_marginBottom="14dp"-->
+<!--        android:text="Masuk"-->
+<!--        android:layout_below="@id/ll_logo_sahitya"-->
+<!--        android:background="@drawable/bg_rounded_green"-->
+<!--        android:textColor="#ffffff"></Button>-->
+
+<!--    <Button-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/btn_login"-->
+<!--        android:text="Daftar"-->
+<!--        android:textColor="@color/green_logo"-->
+<!--        android:background="@drawable/bg_rounded_white"></Button>-->
+</RelativeLayout>
