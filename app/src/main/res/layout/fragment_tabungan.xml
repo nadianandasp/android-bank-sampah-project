@@ -34,6 +34,24 @@
                 android:textColor="@android:color/black"
                 android:textSize="@dimen/item_size_24"
                 android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="@dimen/item_margin_38"
+                android:layout_height="wrap_content"
+                android:text="@string/label_logo_sahitya"
+                app:fontFamily="@font/nova_square"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/item_size_10"
+                android:layout_gravity="end"/>
+
+            <ImageView
+                android:layout_width="@dimen/item_margin_32"
+                android:layout_height="@dimen/item_margin_38"
+                android:paddingTop="@dimen/item_margin_4"
+                android:layout_marginLeft="@dimen/item_margin_2"
+                android:layout_marginStart="@dimen/item_margin_2"
+                android:src="@drawable/ic_recycle_sign_1_93px"
+                android:layout_gravity="end"/>
         </LinearLayout>
 
         <LinearLayout

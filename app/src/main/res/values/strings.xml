@@ -50,4 +50,9 @@
     <string name="konfirmasi_password">Konfirmasi Password</string>
     <string name="bank_sampah_sahitya">Bank Sampah Sahitya</string>
     <string name="daftar">Daftar</string>
+    <string name="label_ranking_mingguan">Ranking Mingguan</string>
+    <string name="label_per_minggu">Minggu Ke- Bulan Tahun</string>
+    <string name="random_winner">Random Winner</string>
+    <string name="nama_random_winner">Nama</string>
+    <string name="null_value">0</string>
 </resources>

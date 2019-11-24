@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sahitya.banksampahsahitya.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_green_yellow"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_forgot_password"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorBackgroundGreen"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/item_margin_32"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="@dimen/item_margin_70"
+                        android:layout_height="@dimen/item_margin_70"
+                        android:layout_marginRight="@dimen/item_margin_8"
+                        android:layout_marginEnd="@dimen/item_margin_8"
+                        android:text="@string/label_logo_sahitya"
+                        app:fontFamily="@font/nova_square"
+                        android:textColor="@color/colorItemBackground"
+                        android:textSize="@dimen/item_size_18"
+                        android:layout_gravity="end" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/item_margin_6"
+                        android:src="@drawable/ic_recycle_sign_white"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nama"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="@dimen/item_margin_16"
+                android:layout_marginLeft="@dimen/item_margin_8"
+                android:layout_marginStart="@dimen/item_margin_8"
+                android:layout_marginBottom="@dimen/item_margin_8" />
+
+            <EditText
+                android:id="@+id/edit_text_name_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/item_margin_12"
+                android:background="@drawable/bg_rounded_edit_text"
+                android:textSize="@dimen/item_size_14"
+                android:textColor="@color/colorFont"
+                android:textColorHint="@color/colorDimGray"
+                android:textAlignment="center"
+                android:hint="@string/nama"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nim"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="@dimen/item_margin_16"
+                android:layout_marginLeft="@dimen/item_margin_8"
+                android:layout_marginStart="@dimen/item_margin_8"
+                android:layout_marginBottom="@dimen/item_margin_8" />
+
+            <EditText
+                android:id="@+id/edit_text_nim_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/item_margin_12"
+                android:background="@drawable/bg_rounded_edit_text"
+                android:textSize="@dimen/item_size_14"
+                android:textColor="@color/colorFont"
+                android:textColorHint="@color/colorDimGray"
+                android:textAlignment="center"
+                android:hint="@string/nim"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fakultas"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="@dimen/item_margin_16"
+                android:layout_marginLeft="@dimen/item_margin_8"
+                android:layout_marginStart="@dimen/item_margin_8"
+                android:layout_marginBottom="@dimen/item_margin_8" />
+
+            <EditText
+                android:id="@+id/edit_text_fakultas_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/item_margin_12"
+                android:background="@drawable/bg_rounded_edit_text"
+                android:textSize="@dimen/item_size_14"
+                android:textColor="@color/colorFont"
+                android:textColorHint="@color/colorDimGray"
+                android:textAlignment="center"
+                android:hint="@string/fakultas"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/jurusan"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="@dimen/item_margin_16"
+                android:layout_marginLeft="@dimen/item_margin_8"
+                android:layout_marginStart="@dimen/item_margin_8"
+                android:layout_marginBottom="@dimen/item_margin_8" />
+
+            <EditText
+                android:id="@+id/edit_text_jurusan_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/item_margin_12"
+                android:background="@drawable/bg_rounded_edit_text"
+                android:textSize="@dimen/item_size_14"
+                android:textColor="@color/colorFont"
+                android:textColorHint="@color/colorDimGray"
+                android:textAlignment="center"
+                android:hint="@string/jurusan"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/no_hp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="@dimen/item_margin_16"
+                android:layout_marginLeft="@dimen/item_margin_8"
+                android:layout_marginStart="@dimen/item_margin_8"
+                android:layout_marginBottom="@dimen/item_margin_8" />
+
+            <EditText
+                android:id="@+id/edit_text_no_hp_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/item_margin_12"
+                android:background="@drawable/bg_rounded_edit_text"
+                android:textSize="@dimen/item_size_14"
+                android:textColor="@color/colorFont"
+                android:textColorHint="@color/colorDimGray"
+                android:textAlignment="center"
+                android:inputType="phone"
+                android:hint="@string/no_hp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/alamat"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="@dimen/item_margin_16"
+                android:layout_marginLeft="@dimen/item_margin_8"
+                android:layout_marginStart="@dimen/item_margin_8"
+                android:layout_marginBottom="@dimen/item_margin_8" />
+
+            <EditText
+                android:id="@+id/edit_text_alamat_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/item_margin_12"
+                android:background="@drawable/bg_rounded_edit_text"
+                android:textSize="@dimen/item_size_14"
+                android:textColor="@color/colorFont"
+                android:textColorHint="@color/colorDimGray"
+                android:textAlignment="center"
+                android:hint="@string/alamat"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tempat_tanggal_lahir"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="@dimen/item_margin_16"
+                android:layout_marginLeft="@dimen/item_margin_8"
+                android:layout_marginStart="@dimen/item_margin_8"
+                android:layout_marginBottom="@dimen/item_margin_8" />
+
+            <EditText
+                android:id="@+id/edit_text_ttl_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/item_margin_12"
+                android:background="@drawable/bg_rounded_edit_text"
+                android:textSize="@dimen/item_size_14"
+                android:textColor="@color/colorFont"
+                android:textColorHint="@color/colorDimGray"
+                android:textAlignment="center"
+                android:inputType="datetime"
+                android:hint="@string/tempat_tanggal_lahir"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="@dimen/item_margin_56"
+                android:layout_marginLeft="@dimen/item_margin_8"
+                android:layout_marginStart="@dimen/item_margin_8"
+                android:layout_marginBottom="@dimen/item_margin_8" />
+
+            <EditText
+                android:id="@+id/edit_text_email_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/item_margin_12"
+                android:background="@drawable/bg_rounded_edit_text"
+                android:textSize="@dimen/item_size_14"
+                android:textColor="@color/colorFont"
+                android:textColorHint="@color/colorDimGray"
+                android:textAlignment="center"
+                android:inputType="textEmailAddress"
+                android:hint="@string/email"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/password"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="@dimen/item_margin_16"
+                android:layout_marginLeft="@dimen/item_margin_8"
+                android:layout_marginStart="@dimen/item_margin_8"
+                android:layout_marginBottom="@dimen/item_margin_8" />
+
+            <EditText
+                android:id="@+id/edit_text_password_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/item_margin_12"
+                android:background="@drawable/bg_rounded_edit_text"
+                android:textSize="@dimen/item_size_14"
+                android:textColor="@color/colorFont"
+                android:textColorHint="@color/colorDimGray"
+                android:textAlignment="center"
+                android:inputType="textPassword"
+                android:hint="@string/password"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/konfirmasi_password"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="@dimen/item_margin_16"
+                android:layout_marginLeft="@dimen/item_margin_8"
+                android:layout_marginStart="@dimen/item_margin_8"
+                android:layout_marginBottom="@dimen/item_margin_8" />
+
+            <EditText
+                android:id="@+id/edit_text_konfirmasi_password_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/item_margin_12"
+                android:background="@drawable/bg_rounded_edit_text"
+                android:textSize="@dimen/item_size_14"
+                android:textColor="@color/colorFont"
+                android:textColorHint="@color/colorDimGray"
+                android:textAlignment="center"
+                android:inputType="textPassword"
+                android:hint="@string/konfirmasi_password"/>
+
+            <Button
+                android:id="@+id/btn_daftar_register"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/item_margin_32"
+                android:layout_marginBottom="@dimen/item_margin_32"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/bg_rounded_white"
+                android:text="@string/daftar"
+                android:textSize="@dimen/item_size_14"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
