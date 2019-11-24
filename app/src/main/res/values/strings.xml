@@ -31,4 +31,23 @@
     <string name="label_logo_sahitya">Bank Sampah Sahitya</string>
     <string name="label_logout">Logout</string>
     <string name="label_submenu_profile">Pencairan</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="masuk">Masuk</string>
+    <string name="belum_memiliki_akun">Belum Memiliki Akun?</string>
+    <string name="sign_up"><u>Sign Up</u></string>
+    <string name="forgot_password"><u>Lupa Kata Sandi?</u></string>
+    <string name="label_instructions">Masukkan alamat email yang anda gunakan ketika anda bergabung dan kami akan mengirimkan anda instruksi untuk mereset kata sandi anda</string>
+    <string name="email_address">Email Address</string>
+    <string name="send_email">Send Email</string>
+    <string name="nama">Nama</string>
+    <string name="nim">NIM</string>
+    <string name="fakultas">Fakultas</string>
+    <string name="jurusan">Jurusan</string>
+    <string name="no_hp">No. HP</string>
+    <string name="alamat">Alamat</string>
+    <string name="tempat_tanggal_lahir">Tempat, Tanggal Lahir</string>
+    <string name="konfirmasi_password">Konfirmasi Password</string>
+    <string name="bank_sampah_sahitya">Bank Sampah Sahitya</string>
+    <string name="daftar">Daftar</string>
 </resources>
