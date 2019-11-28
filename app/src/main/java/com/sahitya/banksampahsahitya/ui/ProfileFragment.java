@@ -1,5 +1,6 @@
 package com.sahitya.banksampahsahitya.ui;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,12 +11,13 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.sahitya.banksampahsahitya.R;
-import com.sahitya.banksampahsahitya.model.Profile;
+import com.sahitya.banksampahsahitya.model.ProfilesModel;
 import com.sahitya.banksampahsahitya.presentation.adapter.ProfileAdapter;
 import com.sahitya.banksampahsahitya.presentation.membership.SettingsActivity;
 import com.sahitya.banksampahsahitya.presentation.membership.changepassword.ChangePasswordActivity;
 import com.sahitya.banksampahsahitya.presentation.membership.disbursement.DisbursementActivity;
 import com.sahitya.banksampahsahitya.presentation.membership.editprofile.EditProfileActivity;
+import com.sahitya.banksampahsahitya.presentation.membership.login.LoginActivity;
 
 import java.util.ArrayList;
 import androidx.fragment.app.Fragment;
@@ -69,19 +71,20 @@ public class ProfileFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getContext(), "Logout", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getContext(), LoginActivity.class));
             }
         });
     }
 
     private void setListMenuProfile() {
-        ArrayList<Profile> profileList = new ArrayList<>();
+        ArrayList<ProfilesModel> profilesModelList = new ArrayList<>();
 
-        profileList.add(new Profile(R.drawable.ic_disbursement, "Pencairan"));
-        profileList.add(new Profile(R.drawable.ic_edit_profile, "Edit Profile"));
-        profileList.add(new Profile(R.drawable.ic_change_password, "Ganti Password"));
-        profileList.add(new Profile(R.drawable.ic_setting, "Pengaturan"));
+        profilesModelList.add(new ProfilesModel(R.drawable.ic_disbursement, "Pencairan"));
+        profilesModelList.add(new ProfilesModel(R.drawable.ic_edit_profile, "Edit ProfilesModel"));
+        profilesModelList.add(new ProfilesModel(R.drawable.ic_change_password, "Ganti Password"));
+        profilesModelList.add(new ProfilesModel(R.drawable.ic_setting, "Pengaturan"));
 
-        ProfileAdapter profileAdapter = new ProfileAdapter(getContext(), profileList);
+        ProfileAdapter profileAdapter = new ProfileAdapter(getContext(), profilesModelList);
 
         rvProfile.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false));
         rvProfile.setAdapter(profileAdapter);

@@ -46,7 +46,7 @@
     <string name="jurusan">Jurusan</string>
     <string name="no_hp">No. HP</string>
     <string name="alamat">Alamat</string>
-    <string name="tempat_tanggal_lahir">Tempat, Tanggal Lahir</string>
+    <string name="tanggal_lahir">Tanggal Lahir (DD/MM/YYYY)</string>
     <string name="konfirmasi_password">Konfirmasi Password</string>
     <string name="bank_sampah_sahitya">Bank Sampah Sahitya</string>
     <string name="daftar">Daftar</string>

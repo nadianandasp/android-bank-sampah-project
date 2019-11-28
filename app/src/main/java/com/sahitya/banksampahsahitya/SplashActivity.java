@@ -6,9 +6,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+import com.sahitya.banksampahsahitya.presentation.membership.login.LoginActivity;
+
 public class SplashActivity extends AppCompatActivity {
 
-    private int time_load = 4000;
+    private int time_load = 3000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +20,7 @@ public class SplashActivity extends AppCompatActivity {
 
             @Override
             public void run() {
-                Intent main=new Intent(SplashActivity.this, MainActivity.class);
+                Intent main=new Intent(SplashActivity.this, LoginActivity.class);
                 startActivity(main);
                 finish();
             }

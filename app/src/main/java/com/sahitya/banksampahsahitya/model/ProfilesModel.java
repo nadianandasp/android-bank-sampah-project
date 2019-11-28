@@ -1,12 +1,12 @@
 package com.sahitya.banksampahsahitya.model;
 
-public class Profile {
+public class ProfilesModel {
 
     private int imgProfile;
 
     private String tvProfile;
 
-    public Profile(int imgProfile, String tvProfile) {
+    public ProfilesModel(int imgProfile, String tvProfile) {
         this.imgProfile = imgProfile;
         this.tvProfile = tvProfile;
     }

@@ -38,6 +38,7 @@
                     android:orientation="horizontal">
 
                     <TextView
+                        android:id="@+id/tv_name_peringkat_ranking"
                         android:layout_width="220dp"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="8dp"
@@ -48,6 +49,7 @@
                         android:textColor="@color/colorPrimaryDark"/>
 
                     <TextView
+                        android:id="@+id/tv_nilai_peringkat_ranking"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="8dp"

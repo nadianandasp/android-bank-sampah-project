@@ -90,10 +90,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/nim"
                 android:textColor="@android:color/black"
-                android:layout_marginTop="@dimen/item_margin_16"
-                android:layout_marginLeft="@dimen/item_margin_8"
-                android:layout_marginStart="@dimen/item_margin_8"
-                android:layout_marginBottom="@dimen/item_margin_8" />
+                android:layout_margin="@dimen/item_margin_8" />
 
             <EditText
                 android:id="@+id/edit_text_nim_register"
@@ -105,6 +102,7 @@
                 android:textColor="@color/colorFont"
                 android:textColorHint="@color/colorDimGray"
                 android:textAlignment="center"
+                android:inputType="number"
                 android:hint="@string/nim"/>
 
             <TextView
@@ -112,10 +110,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/fakultas"
                 android:textColor="@android:color/black"
-                android:layout_marginTop="@dimen/item_margin_16"
-                android:layout_marginLeft="@dimen/item_margin_8"
-                android:layout_marginStart="@dimen/item_margin_8"
-                android:layout_marginBottom="@dimen/item_margin_8" />
+                android:layout_margin="@dimen/item_margin_8" />
 
             <EditText
                 android:id="@+id/edit_text_fakultas_register"
@@ -134,10 +129,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/jurusan"
                 android:textColor="@android:color/black"
-                android:layout_marginTop="@dimen/item_margin_16"
-                android:layout_marginLeft="@dimen/item_margin_8"
-                android:layout_marginStart="@dimen/item_margin_8"
-                android:layout_marginBottom="@dimen/item_margin_8" />
+                android:layout_margin="@dimen/item_margin_8"/>
 
             <EditText
                 android:id="@+id/edit_text_jurusan_register"
@@ -156,10 +148,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/no_hp"
                 android:textColor="@android:color/black"
-                android:layout_marginTop="@dimen/item_margin_16"
-                android:layout_marginLeft="@dimen/item_margin_8"
-                android:layout_marginStart="@dimen/item_margin_8"
-                android:layout_marginBottom="@dimen/item_margin_8" />
+                android:layout_margin="@dimen/item_margin_8" />
 
             <EditText
                 android:id="@+id/edit_text_no_hp_register"
@@ -179,10 +168,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/alamat"
                 android:textColor="@android:color/black"
-                android:layout_marginTop="@dimen/item_margin_16"
-                android:layout_marginLeft="@dimen/item_margin_8"
-                android:layout_marginStart="@dimen/item_margin_8"
-                android:layout_marginBottom="@dimen/item_margin_8" />
+                android:layout_margin="@dimen/item_margin_8"/>
 
             <EditText
                 android:id="@+id/edit_text_alamat_register"
@@ -199,12 +185,9 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/tempat_tanggal_lahir"
+                android:text="@string/tanggal_lahir"
                 android:textColor="@android:color/black"
-                android:layout_marginTop="@dimen/item_margin_16"
-                android:layout_marginLeft="@dimen/item_margin_8"
-                android:layout_marginStart="@dimen/item_margin_8"
-                android:layout_marginBottom="@dimen/item_margin_8" />
+                android:layout_margin="@dimen/item_margin_8" />
 
             <EditText
                 android:id="@+id/edit_text_ttl_register"
@@ -216,8 +199,8 @@
                 android:textColor="@color/colorFont"
                 android:textColorHint="@color/colorDimGray"
                 android:textAlignment="center"
-                android:inputType="datetime"
-                android:hint="@string/tempat_tanggal_lahir"/>
+                android:inputType="date"
+                android:hint="@string/tanggal_lahir"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -292,8 +275,8 @@
                 android:id="@+id/btn_daftar_register"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_marginTop="@dimen/item_margin_32"
-                android:layout_marginBottom="@dimen/item_margin_32"
+                android:layout_marginTop="@dimen/item_margin_56"
+                android:layout_marginBottom="@dimen/item_margin_16"
                 android:layout_gravity="bottom"
                 android:gravity="center"
                 android:layout_weight="1"
