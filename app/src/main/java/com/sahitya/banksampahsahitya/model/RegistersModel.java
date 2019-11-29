@@ -6,7 +6,7 @@ import android.os.Parcelable;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class RegistersModel implements Parcelable {
+public class RegistersModel{
 
     @SerializedName("id")
     private int id;
@@ -54,32 +54,6 @@ public class RegistersModel implements Parcelable {
     public RegistersModel(){
 
     }
-
-    protected RegistersModel(Parcel in) {
-        id = in.readInt();
-        name = in.readString();
-        email = in.readString();
-        password = in.readString();
-        passwordConfirmation = in.readString();
-        nim = in.readString();
-        fakultas = in.readString();
-        jurusan = in.readString();
-        hp = in.readString();
-        alamat = in.readString();
-        tanggalLahir = in.readString();
-    }
-
-    public static final Creator<RegistersModel> CREATOR = new Creator<RegistersModel>() {
-        @Override
-        public RegistersModel createFromParcel(Parcel in) {
-            return new RegistersModel(in);
-        }
-
-        @Override
-        public RegistersModel[] newArray(int size) {
-            return new RegistersModel[size];
-        }
-    };
 
     public int getId() {
         return id;
@@ -175,8 +149,6 @@ public class RegistersModel implements Parcelable {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", email='" + email + '\'' +
-                ", password='" + password + '\'' +
-                ", passwordConfirmation='" + passwordConfirmation + '\'' +
                 ", nim='" + nim + '\'' +
                 ", fakultas='" + fakultas + '\'' +
                 ", jurusan='" + jurusan + '\'' +
@@ -184,25 +156,5 @@ public class RegistersModel implements Parcelable {
                 ", alamat='" + alamat + '\'' +
                 ", tanggalLahir='" + tanggalLahir + '\'' +
                 '}';
-    }
-
-    @Override
-    public int describeContents() {
-        return 0;
-    }
-
-    @Override
-    public void writeToParcel(Parcel parcel, int i) {
-        parcel.writeInt(id);
-        parcel.writeString(name);
-        parcel.writeString(email);
-        parcel.writeString(password);
-        parcel.writeString(passwordConfirmation);
-        parcel.writeString(nim);
-        parcel.writeString(fakultas);
-        parcel.writeString(jurusan);
-        parcel.writeString(hp);
-        parcel.writeString(alamat);
-        parcel.writeString(tanggalLahir);
     }
 }

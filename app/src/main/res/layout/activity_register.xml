@@ -287,6 +287,5 @@
                 android:textColor="@color/colorPrimaryDark"/>
 
         </LinearLayout>
-
     </LinearLayout>
 </ScrollView>
