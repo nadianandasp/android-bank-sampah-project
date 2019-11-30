@@ -15,6 +15,7 @@ import com.sahitya.banksampahsahitya.ForgotPasswordActivity;
 import com.sahitya.banksampahsahitya.MainActivity;
 import com.sahitya.banksampahsahitya.R;
 import com.sahitya.banksampahsahitya.RegisterActivity;
+import com.sahitya.banksampahsahitya.VerificationCodeActivity;
 import com.sahitya.banksampahsahitya.model.LoginModel;
 import com.sahitya.banksampahsahitya.rest.service.LoginService;
 import com.sahitya.banksampahsahitya.utils.LoginUtils;
@@ -87,10 +88,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             @Override
             public void onResponse(Call<LoginModel> call, Response<LoginModel> response) {
                 if (response.isSuccessful()){
-                    Log.d(TAG, String.valueOf(response.body()));
+                    Log.d(TAG, response.body().toString());
                     Log.d(TAG, "Sukses");
 
-                    startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                    startActivity(new Intent(getApplicationContext(), VerificationCodeActivity.class));
                 }else{
                     Log.d(TAG, "Gagal");
                 }

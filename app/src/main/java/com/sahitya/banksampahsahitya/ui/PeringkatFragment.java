@@ -44,7 +44,7 @@ public class PeringkatFragment extends Fragment {
 
     private Unbinder unbinder;
 
-    private ArrayList<RankingModel> rankingArrayList = new ArrayList<>();
+    private ArrayList<RankingModel> rankingArrayList;
     private RankingAdapter adapter;
 
     public PeringkatFragment() {
@@ -68,6 +68,8 @@ public class PeringkatFragment extends Fragment {
         RankingUtils rankingModel = ViewModelProviders.of(this).get(RankingUtils.class);
         rankingModel.getLiveDataRanking().observe(this, getRankingData);
 
+        rankingArrayList = new ArrayList<>();
+
         adapter = new RankingAdapter(getContext(), rankingArrayList);
         adapter.notifyDataSetChanged();
 
@@ -75,7 +77,7 @@ public class PeringkatFragment extends Fragment {
         rvRanking.setLayoutManager(new LinearLayoutManager(getContext()));
         rvRanking.setAdapter(adapter);
 
-        rankingModel.asyncRanking(rankingArrayList);
+        rankingModel.asyncRanking();
     }
 
     private Observer<ArrayList<RankingModel>> getRankingData = new Observer<ArrayList<RankingModel>>() {

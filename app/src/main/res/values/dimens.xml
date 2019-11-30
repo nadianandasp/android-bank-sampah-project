@@ -30,4 +30,6 @@
     <dimen name="item_margin_14">14dp</dimen>
     <dimen name="item_margin_38">38dp</dimen>
     <dimen name="item_size_10">10sp</dimen>
+    <dimen name="item_size_22">22sp</dimen>
+    <dimen name="item_margin_20">20dp</dimen>
 </resources>

@@ -21,11 +21,12 @@
 
             <TextView
                 android:layout_width="@dimen/item_margin_120"
-                android:layout_height="@dimen/item_margin_108"
+                android:layout_height="@dimen/item_margin_120"
                 android:text="@string/label_logo_sahitya"
                 app:fontFamily="@font/nova_square"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="26sp"
+                android:maxLines="3"
                 android:layout_gravity="end"/>
 
             <ImageView

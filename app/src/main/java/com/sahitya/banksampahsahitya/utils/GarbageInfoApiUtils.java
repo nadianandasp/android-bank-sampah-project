@@ -21,8 +21,10 @@ public class GarbageInfoApiUtils extends ViewModel {
 
     private MutableLiveData<ArrayList<GarbageInfoModel>> mutableLiveDataGarbageInfo = new MutableLiveData<>();
 
-    public void asyncGarbageInfoData(final ArrayList<GarbageInfoModel> listGarbageInfo){
+    public void asyncGarbageInfoData(){
         GarbageInfoService garbageInfoService = ApiClient.getClient().create(GarbageInfoService.class);
+
+        final ArrayList<GarbageInfoModel> listGarbageInfo = new ArrayList<>();
 
         Call<ArrayList<GarbageInfoModel>> call = garbageInfoService.getInfoSampah();
         call.enqueue(new Callback<ArrayList<GarbageInfoModel>>() {

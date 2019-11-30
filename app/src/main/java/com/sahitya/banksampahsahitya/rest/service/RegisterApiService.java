@@ -14,12 +14,12 @@ public interface RegisterApiService {
         @Field("name") String name,
         @Field("email") String email,
         @Field("password") String password,
-        @Field("password_confirmation") String passwordConfirmation,
+        @Field("password_confirmation") String password_confirmation,
         @Field("nim") String nim,
         @Field("fakultas") String fakultas,
         @Field("jurusan") String jurusan,
         @Field("hp") String hp,
         @Field("alamat") String alamat,
-        @Field("tanggal_lahir") String tanggalLahir
+        @Field("tanggal_lahir") String tanggal_lahir
     );
 }

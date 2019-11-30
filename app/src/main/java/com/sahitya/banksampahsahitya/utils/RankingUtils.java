@@ -24,15 +24,16 @@ public class RankingUtils extends ViewModel {
     private MutableLiveData<ArrayList<RankingModel>> mutableLiveDataRanking = new MutableLiveData<>();
     private MutableLiveData<ArrayList<RankingRandomModel>> mutableLiveDataRandom = new MutableLiveData<>();
 
-    public void asyncRanking(final ArrayList<RankingModel> rankingArrayList){
+    public void asyncRanking(){
         RankingService rankingService = ApiClient.getClient().create(RankingService.class);
+
+        final ArrayList<RankingModel> rankingArrayList = new ArrayList<>();
 
         Call<RankingResponseModel> call = rankingService.getRanking();
         call.enqueue(new Callback<RankingResponseModel>() {
             @Override
             public void onResponse(Call<RankingResponseModel> call, Response<RankingResponseModel> response) {
                 ArrayList<RankingModel> rankingList = response.body().getRanking();
-                Log.d(TAG, "Size : "+rankingList.size());
 
                 if (!response.isSuccessful()){
                     return;

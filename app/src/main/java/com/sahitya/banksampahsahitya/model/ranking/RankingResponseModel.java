@@ -12,9 +12,9 @@ public class RankingResponseModel {
     private ArrayList<RankingModel> ranking;
 
     @SerializedName("random")
-    private ArrayList<RankingRandomModel> random;
+    private RankingRandomModel random;
 
-    public RankingResponseModel(int season, ArrayList<RankingModel> ranking, ArrayList<RankingRandomModel> random) {
+    public RankingResponseModel(int season, ArrayList<RankingModel> ranking, RankingRandomModel random) {
         this.season = season;
         this.ranking = ranking;
         this.random = random;
@@ -36,11 +36,11 @@ public class RankingResponseModel {
         this.ranking = ranking;
     }
 
-    public ArrayList<RankingRandomModel> getRandom() {
+    public RankingRandomModel getRandom() {
         return random;
     }
 
-    public void setRandom(ArrayList<RankingRandomModel> random) {
+    public void setRandom(RankingRandomModel random) {
         this.random = random;
     }
 }

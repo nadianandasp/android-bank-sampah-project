@@ -3,12 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context="com.sahitya.banksampahsahitya.RegisterActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:background="@drawable/background_green_yellow"
         android:orientation="vertical">
 
@@ -112,13 +112,13 @@
                 android:textColor="@android:color/black"
                 android:layout_margin="@dimen/item_margin_8" />
 
-            <EditText
-                android:id="@+id/edit_text_fakultas_register"
+            <Spinner
+                android:id="@+id/spinner_fakultas_register"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/item_margin_12"
                 android:background="@drawable/bg_rounded_edit_text"
-                android:textSize="@dimen/item_size_14"
+                android:textSize="@dimen/item_size_12"
                 android:textColor="@color/colorFont"
                 android:textColorHint="@color/colorDimGray"
                 android:textAlignment="center"
@@ -131,13 +131,13 @@
                 android:textColor="@android:color/black"
                 android:layout_margin="@dimen/item_margin_8"/>
 
-            <EditText
-                android:id="@+id/edit_text_jurusan_register"
+            <Spinner
+                android:id="@+id/spinner_jurusan_register"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/item_margin_12"
                 android:background="@drawable/bg_rounded_edit_text"
-                android:textSize="@dimen/item_size_14"
+                android:textSize="@dimen/item_size_12"
                 android:textColor="@color/colorFont"
                 android:textColorHint="@color/colorDimGray"
                 android:textAlignment="center"
@@ -189,18 +189,31 @@
                 android:textColor="@android:color/black"
                 android:layout_margin="@dimen/item_margin_8" />
 
-            <EditText
-                android:id="@+id/edit_text_ttl_register"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="@dimen/item_margin_12"
-                android:background="@drawable/bg_rounded_edit_text"
-                android:textSize="@dimen/item_size_14"
-                android:textColor="@color/colorFont"
-                android:textColorHint="@color/colorDimGray"
-                android:textAlignment="center"
-                android:inputType="date"
-                android:hint="@string/tanggal_lahir"/>
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_set_calendar"
+                    android:layout_width="@dimen/item_margin_56"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_date_range_black"/>
+
+                <EditText
+                    android:id="@+id/edit_text_ttl_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/item_margin_12"
+                    android:background="@drawable/bg_rounded_edit_text"
+                    android:textSize="@dimen/item_size_14"
+                    android:textColor="@color/colorFont"
+                    android:textColorHint="@color/colorDimGray"
+                    android:textAlignment="center"
+                    android:hint="@string/tanggal_lahir"
+                    android:editable="false"/>
+
+            </LinearLayout>
 
             <TextView
                 android:layout_width="match_parent"

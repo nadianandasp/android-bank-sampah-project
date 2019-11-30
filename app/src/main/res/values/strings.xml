@@ -46,7 +46,7 @@
     <string name="jurusan">Jurusan</string>
     <string name="no_hp">No. HP</string>
     <string name="alamat">Alamat</string>
-    <string name="tanggal_lahir">Tanggal Lahir (DD/MM/YYYY)</string>
+    <string name="tanggal_lahir">Tanggal Lahir (YYYY-MM-DD)</string>
     <string name="konfirmasi_password">Konfirmasi Password</string>
     <string name="bank_sampah_sahitya">Bank Sampah Sahitya</string>
     <string name="daftar">Daftar</string>
@@ -55,4 +55,137 @@
     <string name="random_winner">Random Winner</string>
     <string name="nama_random_winner">Nama</string>
     <string name="null_value">0</string>
+    <string name="regist">Daftar</string>
+    <string name="regist_success">Akun Telah Berhasil Terdaftar</string>
+    <string name="kode_verifikasi">Kode Verifikasi</string>
+    <string name="label_kode_verifikasi">Masukkan kode verifikasi yang sudah dikirim ke email anda</string>
+    <string name="kirim">Kirim</string>
+
+
+    <string-array name="fakultas">
+        <item>Pilih Fakultas</item>
+        <item>Ilmu Tarbiyah Dan Keguruan</item>
+        <item>Adab Dan Humaniora</item>
+        <item>Ushuluddin</item>
+        <item>Syariah Dan Hukum</item>
+        <item>Dakwah Dan Ilmu Komunikasi</item>
+        <item>Dirasat Islamiyah</item>
+        <item>Psikologi</item>
+        <item>Ekonomi Dan Bisnis</item>
+        <item>Sains Dan Teknologi</item>
+        <item>Ilmu Kesehatan</item>
+        <item>Ilmu Sosial Dan Ilmu Politik</item>
+        <item>Kedokteran</item>
+    </string-array>
+
+    <string-array name="jurusan_no_selected">
+        <item>Pilih Jurusan</item>
+    </string-array>
+
+    <string-array name="jurusan_fitk">
+        <item>Pilih Jurusan</item>
+        <item>Pendidikan Agama Islam</item>
+        <item>Pendidika Bahasa Arab</item>
+        <item>Pendidikan Bahasa Inggris</item>
+        <item>Pendidikan Biologi</item>
+        <item>Pendidikan Kimia</item>
+        <item>Pendidikan Fisika</item>
+        <item>Pendidikan Matematika</item>
+        <item>Manajemen Pendidikan</item>
+        <item>Pendidikan Guru Madrasah Ibtidaiyah</item>
+        <item>Pendidikan Bahasa dan Sastra Indonesia</item>
+        <item>Pendidikan Ilmu Pengetahuan Sosial</item>
+        <item>Pendidikan Islam Anak Usia Dini</item>
+    </string-array>
+
+    <string-array name="jurusan_adab_humaniora">
+        <item>Pilih Jurusan</item>
+        <item>Bahasa dan Sastra Arab</item>
+        <item>Sejarah dan Kebudayaan Islam</item>
+        <item>Tarjamah</item>
+        <item>Ilmu Perpustakaan</item>
+        <item>Bahasa dan Sastra Inggris</item>
+    </string-array>
+
+    <string-array name="jurusan_ushuluddin">
+        <item>Pilih Jurusan</item>
+        <item>Studi Agama Agama</item>
+        <item>Ilmu Alquran dan Tafsir</item>
+        <item>Ilmu Hadist</item>
+        <item>Aqidah dan Filsafat Islam</item>
+        <item>Ilmu Tasawuf</item>
+    </string-array>
+
+    <string-array name="jurusan_syariah_hukum">
+        <item>Pilih Jurusan</item>
+        <item>Hukum Keluarga (Ahwal Syakhsiyyah)</item>
+        <item>Perbandingan Mazhab</item>
+        <item>Hukum Tata Negara (Siyasah)</item>
+        <item>Hukum Pidana Islam (Jinayah)</item>
+        <item>Hukum Ekonomi Syariah (Muamalat)</item>
+        <item>Ilmu Hukum</item>
+    </string-array>
+
+    <string-array name="jurusan_dakwah_komunikasi">
+        <item>Pilih Jurusan</item>
+        <item>Komunikasi dan Penyiaran Islam</item>
+        <item>Bimbingan dan Penyuluhan Islam</item>
+        <item>Manajemen Dakwah</item>
+        <item>Pengembangan Masyarakat Islam</item>
+        <item>Kesejahteraan Sosial</item>
+        <item>Jurnalistik</item>
+    </string-array>
+
+    <string-array name="jurusan_dirasat">
+        <item>Pilih Jurusan</item>
+        <item>Dirasat Islamiyah</item>
+    </string-array>
+
+    <string-array name="jurusan_psikologi">
+        <item>Pilih Jurusan</item>
+        <item>Psikologi</item>
+    </string-array>
+
+    <string-array name="jurusan_ekonomi">
+        <item>Pilih Jurusan</item>
+        <item>Manajemen</item>
+        <item>Akuntansi</item>
+        <item>Ilmu Ekonomi dan Studi Pembangunan</item>
+        <item>Ekonomi Syariah</item>
+        <item>Perbankan Syariah</item>
+    </string-array>
+
+    <string-array name="jurusan_sains_teknologi">
+        <item>Pilih Jurusan</item>
+        <item>Agribisnis</item>
+        <item>Teknik Informatika</item>
+        <item>Sistem Informasi</item>
+        <item>Matematika</item>
+        <item>Biologi</item>
+        <item>Kimia</item>
+        <item>Fisika</item>
+        <item>Teknik Pertambangan</item>
+    </string-array>
+
+    <string-array name="jurusan_ilmu_kesehatan">
+        <item>Pilih Jurusan</item>
+        <item>Kesehatan Masyarakat</item>
+        <item>Farmasi</item>
+        <item>Ilmu Keperawatan</item>
+        <item>Program Profesi Keperawatan (Ners)</item>
+        <item>Program Profesi Farmasi (Apoteker)</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="jurusan_isip">
+        <item>Pilih Jurusan</item>
+        <item>Sosiologi</item>
+        <item>Ilmu Politik</item>
+        <item>Ilmu Hubungan Internasional</item>
+    </string-array>
+
+    <string-array name="jurusan_kedokteran">
+        <item>Pilih Jurusan</item>
+        <item>Kedokteran dan Pendidikan Dokter</item>
+    </string-array>
 </resources>
