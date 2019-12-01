@@ -9,4 +9,7 @@
     <color name="green_logo">#9ADB3E</color>
     <color name="white">#ffffff</color>
     <color name="black">#000000</color>
+    <color name="colorBackgroundYellow">#CBFE00</color>
+    <color name="colorBackgroundGreen">#91CC33</color>
+    <color name="background">#FAFAFA</color>
 </resources>

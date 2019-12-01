@@ -8,7 +8,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.sahitya.banksampahsahitya.R;
-import com.sahitya.banksampahsahitya.model.Profile;
+import com.sahitya.banksampahsahitya.model.ProfilesModel;
 
 import java.util.ArrayList;
 
@@ -22,17 +22,17 @@ public class ProfileAdapter extends RecyclerView.Adapter<ProfileAdapter.ProfileV
 
     private Context context;
 
-    private ArrayList<Profile> menuProfileList;
+    private ArrayList<ProfilesModel> menuProfilesModelList;
 
     public OnProfileClickListener onProfileClickListener;
 
-    public ProfileAdapter(Context context, ArrayList<Profile> profileList) {
+    public ProfileAdapter(Context context, ArrayList<ProfilesModel> profilesModelList) {
         this.context = context;
-        this.menuProfileList = profileList;
+        this.menuProfilesModelList = profilesModelList;
     }
 
-    public ArrayList<Profile> getMenuProfileList() {
-        return menuProfileList;
+    public ArrayList<ProfilesModel> getMenuProfilesModelList() {
+        return menuProfilesModelList;
     }
 
     public OnProfileClickListener getOnProfileClickListener(){
@@ -53,12 +53,12 @@ public class ProfileAdapter extends RecyclerView.Adapter<ProfileAdapter.ProfileV
 
     @Override
     public void onBindViewHolder(@NonNull ProfileViewHolder holder, int position) {
-        holder.bind(menuProfileList.get(position));
+        holder.bind(menuProfilesModelList.get(position));
     }
 
     @Override
     public int getItemCount() {
-        return menuProfileList.size();
+        return menuProfilesModelList.size();
     }
 
     public class ProfileViewHolder extends RecyclerView.ViewHolder {
@@ -77,9 +77,9 @@ public class ProfileAdapter extends RecyclerView.Adapter<ProfileAdapter.ProfileV
             ButterKnife.bind(this, itemView);
         }
 
-        public void bind(Profile profile) {
-            imgProfile.setImageResource(profile.getImgProfile());
-            tvProfile.setText(profile.getTvProfile());
+        public void bind(ProfilesModel profilesModel) {
+            imgProfile.setImageResource(profilesModel.getImgProfile());
+            tvProfile.setText(profilesModel.getTvProfile());
 
             containerMenuProfile.setOnClickListener(new View.OnClickListener() {
                 @Override
