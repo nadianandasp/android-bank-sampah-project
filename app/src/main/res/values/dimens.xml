@@ -37,4 +37,7 @@
     <dimen name="item_margin_22">22dp</dimen>
     <dimen name="item_margin_24">24dp</dimen>
     <dimen name="item_margin_1">1dp</dimen>
+    <dimen name="item_margin_112">112dp</dimen>
+    <dimen name="item_margin_50">50dp</dimen>
+    <dimen name="item_margin_110">110dp</dimen>
 </resources>

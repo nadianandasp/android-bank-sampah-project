@@ -15,11 +15,12 @@ import com.sahitya.banksampahsahitya.model.ProfilesModel;
 import com.sahitya.banksampahsahitya.presentation.adapter.ProfileAdapter;
 import com.sahitya.banksampahsahitya.presentation.membership.SettingsActivity;
 import com.sahitya.banksampahsahitya.presentation.membership.changepassword.ChangePasswordActivity;
-import com.sahitya.banksampahsahitya.presentation.membership.disbursement.DisbursementActivity;
 import com.sahitya.banksampahsahitya.presentation.membership.editprofile.EditProfileActivity;
+import com.sahitya.banksampahsahitya.presentation.membership.help.HelpActivity;
 import com.sahitya.banksampahsahitya.presentation.membership.login.LoginActivity;
 
 import java.util.ArrayList;
+
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -64,13 +65,14 @@ public class ProfileFragment extends Fragment {
         setLogoutAccount();
 
         return view;
+
     }
 
     private void setLogoutAccount() {
         containerLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Logout", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), R.string.label_logout, Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(getContext(), LoginActivity.class));
             }
         });
@@ -79,10 +81,10 @@ public class ProfileFragment extends Fragment {
     private void setListMenuProfile() {
         ArrayList<ProfilesModel> profilesModelList = new ArrayList<>();
 
-        profilesModelList.add(new ProfilesModel(R.drawable.ic_disbursement, "Pencairan"));
-        profilesModelList.add(new ProfilesModel(R.drawable.ic_edit_profile, "Edit ProfilesModel"));
-        profilesModelList.add(new ProfilesModel(R.drawable.ic_change_password, "Ganti Password"));
-        profilesModelList.add(new ProfilesModel(R.drawable.ic_setting, "Pengaturan"));
+        profilesModelList.add(new ProfilesModel(R.drawable.ic_disbursement, getString(R.string.label_help)));
+        profilesModelList.add(new ProfilesModel(R.drawable.ic_edit_profile, getString(R.string.label_edit_profile)));
+        profilesModelList.add(new ProfilesModel(R.drawable.ic_change_password, getString(R.string.label_change_password)));
+        profilesModelList.add(new ProfilesModel(R.drawable.ic_setting, getString(R.string.label_settings)));
 
         ProfileAdapter profileAdapter = new ProfileAdapter(getContext(), profilesModelList);
 
@@ -95,7 +97,7 @@ public class ProfileFragment extends Fragment {
             public void onProfileClicked(View view, int position) {
                 switch (position) {
                     case 0:
-                        DisbursementActivity.start(getContext());
+                        HelpActivity.start(getContext());
                         break;
                     case 1:
                         EditProfileActivity.start(getContext());
@@ -110,5 +112,4 @@ public class ProfileFragment extends Fragment {
             }
         });
     }
-
 }

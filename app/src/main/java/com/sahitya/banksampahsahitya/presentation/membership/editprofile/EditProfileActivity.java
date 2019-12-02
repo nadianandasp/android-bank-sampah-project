@@ -7,7 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.sahitya.banksampahsahitya.R;
-import com.sahitya.banksampahsahitya.presentation.membership.disbursement.DisbursementActivity;
+import com.sahitya.banksampahsahitya.presentation.disbursement.DisbursementActivity;
 
 public class EditProfileActivity extends AppCompatActivity {
 

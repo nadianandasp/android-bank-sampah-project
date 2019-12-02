@@ -75,6 +75,10 @@
     <string name="value_time_4">16:05</string>
     <string name="value_date_1">12 Okt 2019</string>
     <string name="value_date_3">19 Okt 2019</string>
+    <string name="label_help">Bantuan</string>
+    <string name="label_edit_profile">Edit Profil</string>
+    <string name="label_change_password">Ganti Password</string>
+    <string name="label_settings">Pengaturan</string>
 
 
     <string-array name="fakultas">
