@@ -5,12 +5,63 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".presentation.membership.disbursement.DisbursementActivity">
+    android:background="@color/white"
+    tools:context=".presentation.disbursement.DisbursementActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <View
+        android:id="@+id/shadow_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_margin_4"
+        android:layout_below="@+id/toolbar"
+        android:background="@drawable/tab_drop_shadow" />
 
     <TextView
+        android:text="@string/label_income"
+        style="@style/TextViewBoldBlack14" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dark_border"/>
+
+    <TextView
+        android:id="@+id/tv_total_income"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/value_income"
+        android:textStyle="bold"
+        android:paddingLeft="@dimen/item_margin_12"
+        android:paddingTop="@dimen/item_margin_30"
+        android:paddingBottom="@dimen/item_margin_30"
+        android:textSize="@dimen/item_size_24"
+        android:background="@color/white"
+        android:textColor="@color/black"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_margin_1"
+        android:background="@color/dark_border"/>
+
+    <TextView
+        android:text="@string/label_history_disbursement"
+        style="@style/TextViewBoldBlack14" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_margin_1"
+        android:background="@color/dark_border"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_history_disbursement"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Pencairan"
-        android:gravity="center"/>
+        android:background="@color/white"
+        android:paddingTop="@dimen/item_margin_8"
+        android:paddingBottom="@dimen/item_margin_8"
+        android:paddingLeft="@dimen/item_margin_22"
+        android:paddingRight="@dimen/item_margin_22"
+        android:clipToPadding="false"/>
 
 </LinearLayout>

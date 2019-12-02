@@ -12,4 +12,31 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="TextViewRobotoBoldBlack">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextViewRobotoBold16">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">@dimen/item_size_16</item>
+        <item name="android:textColor">@color/gray_nobel</item>
+    </style>
+
+    <style name="TextViewBoldBlack14">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">@dimen/item_margin_24</item>
+        <item name="android:paddingTop">@dimen/item_margin_12</item>
+        <item name="android:paddingBottom">@dimen/item_margin_12</item>
+        <item name="android:textSize">@dimen/item_size_14</item>
+        <item name="android:background">@color/gray_toolbar</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
 </resources>

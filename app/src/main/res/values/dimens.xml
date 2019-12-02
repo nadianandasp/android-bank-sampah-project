@@ -32,4 +32,9 @@
     <dimen name="item_size_10">10sp</dimen>
     <dimen name="item_size_22">22sp</dimen>
     <dimen name="item_margin_20">20dp</dimen>
+    <dimen name="item_margin_18">18dp</dimen>
+    <dimen name="item_size_16">16sp</dimen>
+    <dimen name="item_margin_22">22dp</dimen>
+    <dimen name="item_margin_24">24dp</dimen>
+    <dimen name="item_margin_1">1dp</dimen>
 </resources>

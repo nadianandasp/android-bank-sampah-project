@@ -12,4 +12,8 @@
     <color name="colorBackgroundYellow">#CBFE00</color>
     <color name="colorBackgroundGreen">#91CC33</color>
     <color name="background">#FAFAFA</color>
+    <color name="gray_nobel">#9B9B9B</color>
+    <color name="border">#EFEFEF</color>
+    <color name="dark_border">#D2D2D2</color>
+    <color name="gray_toolbar">#F5F5F5</color>
 </resources>
