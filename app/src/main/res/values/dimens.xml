@@ -40,4 +40,5 @@
     <dimen name="item_margin_112">112dp</dimen>
     <dimen name="item_margin_50">50dp</dimen>
     <dimen name="item_margin_110">110dp</dimen>
+    <dimen name="item_margin_48">48dp</dimen>
 </resources>

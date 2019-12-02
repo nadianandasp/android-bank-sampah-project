@@ -79,6 +79,9 @@
     <string name="label_edit_profile">Edit Profil</string>
     <string name="label_change_password">Ganti Password</string>
     <string name="label_settings">Pengaturan</string>
+    <string name="hint_new_password">Password Baru</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="label_save">Simpan</string>
 
 
     <string-array name="fakultas">

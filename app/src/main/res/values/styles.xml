@@ -39,4 +39,22 @@
         <item name="android:textColor">@color/black</item>
     </style>
 
+    <style name="TextInputPadding48">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingRight">@dimen/item_margin_48</item>
+        <item name="android:paddingLeft">@dimen/item_margin_48</item>
+    </style>
+
+    <style name="TextInputRounded14">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/bg_rounded_edit_text</item>
+        <item name="android:inputType">textPassword</item>
+        <item name="android:padding">@dimen/item_margin_14</item>
+        <item name="android:textColor">@color/colorFont</item>
+        <item name="android:textColorHint">@color/colorDimGray</item>
+        <item name="android:textSize">@dimen/item_size_14</item>
+    </style>
+
 </resources>
