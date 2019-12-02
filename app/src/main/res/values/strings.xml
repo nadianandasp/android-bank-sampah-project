@@ -82,6 +82,7 @@
     <string name="hint_new_password">Password Baru</string>
     <string name="hint_confirm_password">Confirm Password</string>
     <string name="label_save">Simpan</string>
+    <string name="label_register">Daftar</string>
 
 
     <string-array name="fakultas">

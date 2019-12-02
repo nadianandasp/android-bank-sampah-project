@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:id="@+id/toolbar"
-    android:background="@color/gray_toolbar"
+    android:background="@color/colorPrimaryDark"
     android:theme="@style/ThemeOverlay.AppCompat.Light"
-    app:titleTextColor="@color/black">
+    app:titleTextColor="@color/white">
 
 </androidx.appcompat.widget.Toolbar>

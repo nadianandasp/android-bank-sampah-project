@@ -12,24 +12,13 @@
         android:background="@drawable/background_green_yellow"
         android:orientation="vertical">
 
-        <com.google.android.material.appbar.AppBarLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:theme="@style/AppTheme.AppBarOverlay">
-
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar_forgot_password"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:background="@color/colorBackgroundGreen"
-                app:popupTheme="@style/AppTheme.PopupOverlay" />
-
-        </com.google.android.material.appbar.AppBarLayout>
+        <include layout="@layout/toolbar"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/item_margin_32"
+            android:layout_marginRight="@dimen/item_margin_16"
+            android:layout_marginLeft="@dimen/item_margin_16"
             android:orientation="vertical">
 
             <LinearLayout
@@ -64,53 +53,31 @@
             </LinearLayout>
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:text="@string/nama"
-                android:textColor="@android:color/black"
-                android:layout_marginTop="@dimen/item_margin_16"
-                android:layout_marginLeft="@dimen/item_margin_8"
-                android:layout_marginStart="@dimen/item_margin_8"
-                android:layout_marginBottom="@dimen/item_margin_8" />
+                style="@style/TextRobotoBlack12"/>
 
             <EditText
                 android:id="@+id/edit_text_name_register"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="@dimen/item_margin_12"
-                android:background="@drawable/bg_rounded_edit_text"
-                android:textSize="@dimen/item_size_14"
-                android:textColor="@color/colorFont"
-                android:textColorHint="@color/colorDimGray"
+                app:fontFamily="@font/roboto_regular"
+                android:hint="@string/nama"
                 android:textAlignment="center"
-                android:hint="@string/nama"/>
+                style="@style/EditTextRobotoBlack16"/>
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:text="@string/nim"
-                android:textColor="@android:color/black"
-                android:layout_margin="@dimen/item_margin_8" />
+                style="@style/TextRobotoBlack12" />
 
             <EditText
                 android:id="@+id/edit_text_nim_register"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="@dimen/item_margin_12"
-                android:background="@drawable/bg_rounded_edit_text"
-                android:textSize="@dimen/item_size_14"
-                android:textColor="@color/colorFont"
-                android:textColorHint="@color/colorDimGray"
+                app:fontFamily="@font/roboto_regular"
                 android:textAlignment="center"
                 android:inputType="number"
-                android:hint="@string/nim"/>
+                android:hint="@string/nim"
+                style="@style/EditTextRobotoBlack16"/>
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:text="@string/fakultas"
-                android:textColor="@android:color/black"
-                android:layout_margin="@dimen/item_margin_8" />
+                style="@style/TextRobotoBlack12"/>
 
             <Spinner
                 android:id="@+id/spinner_fakultas_register"
@@ -125,11 +92,8 @@
                 android:hint="@string/fakultas"/>
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:text="@string/jurusan"
-                android:textColor="@android:color/black"
-                android:layout_margin="@dimen/item_margin_8"/>
+                style="@style/TextRobotoBlack12"/>
 
             <Spinner
                 android:id="@+id/spinner_jurusan_register"
@@ -144,50 +108,31 @@
                 android:hint="@string/jurusan"/>
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:text="@string/no_hp"
-                android:textColor="@android:color/black"
-                android:layout_margin="@dimen/item_margin_8" />
+                style="@style/TextRobotoBlack12"/>
 
             <EditText
                 android:id="@+id/edit_text_no_hp_register"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="@dimen/item_margin_12"
-                android:background="@drawable/bg_rounded_edit_text"
-                android:textSize="@dimen/item_size_14"
-                android:textColor="@color/colorFont"
-                android:textColorHint="@color/colorDimGray"
                 android:textAlignment="center"
                 android:inputType="phone"
-                android:hint="@string/no_hp"/>
+                android:hint="@string/no_hp"
+                app:fontFamily="@font/roboto_regular"
+                style="@style/EditTextRobotoBlack16"/>
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:text="@string/alamat"
-                android:textColor="@android:color/black"
-                android:layout_margin="@dimen/item_margin_8"/>
+                style="@style/TextRobotoBlack12"/>
 
             <EditText
                 android:id="@+id/edit_text_alamat_register"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="@dimen/item_margin_12"
-                android:background="@drawable/bg_rounded_edit_text"
-                android:textSize="@dimen/item_size_14"
-                android:textColor="@color/colorFont"
-                android:textColorHint="@color/colorDimGray"
                 android:textAlignment="center"
-                android:hint="@string/alamat"/>
+                android:hint="@string/alamat"
+                app:fontFamily="@font/roboto_regular"
+                style="@style/EditTextRobotoBlack16"/>
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:text="@string/tanggal_lahir"
-                android:textColor="@android:color/black"
-                android:layout_margin="@dimen/item_margin_8" />
+                style="@style/TextRobotoBlack12"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -202,13 +147,7 @@
 
                 <EditText
                     android:id="@+id/edit_text_ttl_register"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="@dimen/item_margin_12"
-                    android:background="@drawable/bg_rounded_edit_text"
-                    android:textSize="@dimen/item_size_14"
-                    android:textColor="@color/colorFont"
-                    android:textColorHint="@color/colorDimGray"
+                    style="@style/EditTextRobotoBlack16"
                     android:textAlignment="center"
                     android:hint="@string/tanggal_lahir"
                     android:editable="false"/>
@@ -216,89 +155,61 @@
             </LinearLayout>
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:text="@string/email"
-                android:textColor="@android:color/black"
-                android:layout_marginTop="@dimen/item_margin_56"
-                android:layout_marginLeft="@dimen/item_margin_8"
-                android:layout_marginStart="@dimen/item_margin_8"
-                android:layout_marginBottom="@dimen/item_margin_8" />
+                android:layout_marginTop="@dimen/item_margin_48"
+                style="@style/TextRobotoBlack12"/>
 
             <EditText
                 android:id="@+id/edit_text_email_register"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="@dimen/item_margin_12"
-                android:background="@drawable/bg_rounded_edit_text"
-                android:textSize="@dimen/item_size_14"
-                android:textColor="@color/colorFont"
-                android:textColorHint="@color/colorDimGray"
                 android:textAlignment="center"
                 android:inputType="textEmailAddress"
-                android:hint="@string/email"/>
+                android:hint="@string/email"
+                style="@style/EditTextRobotoBlack16"
+                app:fontFamily="@font/roboto_regular"/>
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:text="@string/password"
-                android:textColor="@android:color/black"
-                android:layout_marginTop="@dimen/item_margin_16"
-                android:layout_marginLeft="@dimen/item_margin_8"
-                android:layout_marginStart="@dimen/item_margin_8"
-                android:layout_marginBottom="@dimen/item_margin_8" />
+                android:layout_marginTop="@dimen/item_margin_8"
+                style="@style/TextRobotoBlack12"/>
 
             <EditText
                 android:id="@+id/edit_text_password_register"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="@dimen/item_margin_12"
-                android:background="@drawable/bg_rounded_edit_text"
-                android:textSize="@dimen/item_size_14"
-                android:textColor="@color/colorFont"
-                android:textColorHint="@color/colorDimGray"
                 android:textAlignment="center"
                 android:inputType="textPassword"
-                android:hint="@string/password"/>
+                android:hint="@string/password"
+                style="@style/EditTextRobotoBlack16"
+                app:fontFamily="@font/roboto_regular"/>
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:text="@string/konfirmasi_password"
-                android:textColor="@android:color/black"
-                android:layout_marginTop="@dimen/item_margin_16"
-                android:layout_marginLeft="@dimen/item_margin_8"
-                android:layout_marginStart="@dimen/item_margin_8"
-                android:layout_marginBottom="@dimen/item_margin_8" />
+                android:layout_marginTop="@dimen/item_margin_8"
+                style="@style/TextRobotoBlack12"/>
 
             <EditText
                 android:id="@+id/edit_text_konfirmasi_password_register"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="@dimen/item_margin_12"
-                android:background="@drawable/bg_rounded_edit_text"
-                android:textSize="@dimen/item_size_14"
-                android:textColor="@color/colorFont"
-                android:textColorHint="@color/colorDimGray"
                 android:textAlignment="center"
                 android:inputType="textPassword"
-                android:hint="@string/konfirmasi_password"/>
+                android:hint="@string/konfirmasi_password"
+                style="@style/EditTextRobotoBlack16"
+                app:fontFamily="@font/roboto_regular"/>
 
             <Button
                 android:id="@+id/btn_daftar_register"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_marginTop="@dimen/item_margin_56"
-                android:layout_marginBottom="@dimen/item_margin_16"
+                android:layout_marginTop="@dimen/item_margin_32"
+                android:layout_marginBottom="@dimen/item_margin_32"
                 android:layout_gravity="bottom"
                 android:gravity="center"
                 android:layout_weight="1"
-                android:background="@drawable/bg_rounded_white"
+                android:background="@drawable/bg_rounded_green"
                 android:text="@string/daftar"
                 android:textSize="@dimen/item_size_14"
                 android:textStyle="bold"
-                android:textColor="@color/colorPrimaryDark"/>
+                android:textColor="@color/white"/>
 
         </LinearLayout>
+
     </LinearLayout>
+
 </ScrollView>

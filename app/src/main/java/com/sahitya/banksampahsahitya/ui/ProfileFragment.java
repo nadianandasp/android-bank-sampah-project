@@ -27,6 +27,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
+
 /**
  * A simple {@link Fragment} subclass.
  */
@@ -44,6 +45,8 @@ public class ProfileFragment extends Fragment {
     LinearLayout containerLogout;
     @BindView(R.id.linear_profile)
     LinearLayout linearProfile;
+    @BindView(R.id.img_logout)
+    ImageView imgLogout;
 
     Unbinder unbinder;
 
@@ -63,6 +66,8 @@ public class ProfileFragment extends Fragment {
         setListMenuProfile();
 
         setLogoutAccount();
+
+        imgLogout.setColorFilter(getResources().getColor(R.color.red));
 
         return view;
 

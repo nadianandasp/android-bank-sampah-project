@@ -95,6 +95,7 @@
         android:paddingBottom="@dimen/item_margin_8">
 
             <ImageView
+                android:id="@+id/img_logout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_logout"/>
@@ -103,6 +104,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/label_logout"
+                android:textColor="@color/red"
                 android:layout_marginLeft="@dimen/item_margin_10"/>
 
     </LinearLayout>

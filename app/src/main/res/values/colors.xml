@@ -17,4 +17,5 @@
     <color name="dark_border">#D2D2D2</color>
     <color name="gray_toolbar">#F5F5F5</color>
     <color name="gray_whisper">#E5E5E5</color>
+    <color name="red">#ff0000</color>
 </resources>

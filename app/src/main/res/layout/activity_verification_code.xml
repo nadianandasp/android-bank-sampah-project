@@ -94,7 +94,7 @@
             android:text="@string/kirim"
             android:textSize="@dimen/item_size_14"
             android:textStyle="bold"
-            android:textColor="@color/colorItemBackground"/>
+            android:textColor="@color/white"/>
 
     </LinearLayout>
 

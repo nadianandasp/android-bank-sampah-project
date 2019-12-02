@@ -1,13 +1,12 @@
 package com.sahitya.banksampahsahitya.presentation.membership;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
 import com.sahitya.banksampahsahitya.R;
-import com.sahitya.banksampahsahitya.presentation.membership.editprofile.EditProfileActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class SettingsActivity extends AppCompatActivity {
 

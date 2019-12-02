@@ -1,7 +1,5 @@
 package com.sahitya.banksampahsahitya;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -9,6 +7,7 @@ import android.widget.Button;
 
 import com.sahitya.banksampahsahitya.presentation.membership.login.LoginActivity;
 
+import androidx.appcompat.app.AppCompatActivity;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
@@ -34,4 +33,5 @@ public class RegisterSuccesfullyActivity extends AppCompatActivity {
             }
         });
     }
+
 }
